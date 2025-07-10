@@ -15,7 +15,7 @@ This command-line Python tool fetches research papers from PubMed based on a use
   - Corresponding Author Email
 - Supports CLI options for custom queries, debug mode, and file output
 
-## 🛠 Installation
+### 🛠 Installation
 
 1. **Clone the repository:**
 
