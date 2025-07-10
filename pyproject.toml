@@ -1,0 +1,20 @@
+[project]
+name = "pubmed-fetcher"
+version = "0.1.0"
+description = "A CLI tool to fetch PubMed research papers"
+authors = [
+    {name = "harsha24680",email = "nithinharshanidigonda99001@gmail.com"}
+]
+license = {text = "\u0016"}
+readme = "README.md"
+requires-python = "^3.10"
+dependencies = [
+    "requests (>=2.32.4,<3.0.0)",
+    "pandas (>=2.3.1,<3.0.0)",
+    "typer (>=0.16.0,<0.17.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
