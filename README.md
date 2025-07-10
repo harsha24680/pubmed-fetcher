@@ -19,12 +19,11 @@ This command-line Python tool fetches research papers from PubMed based on a use
 
 1. **Clone the repository:**
 
-```bash
 git clone https://github.com/harsha24680/pubmed-fetcher
 cd pubmed-fetcher
 2.Install dependencies using Poetry:
 poetry install
-🚀 Usage
+##🚀 Usage
 Run the tool using the get-papers-list command via Poetry:
 poetry run get-papers-list "cancer immunotherapy" --for-file results.csv
 Options
@@ -33,7 +32,7 @@ Options
 -d, --debug — Enable debug logging
 
 --for-file <filename> — Save output to CSV (prints to console if omitted)
-🧠 How Non-Academic Authors Are Detected
+##🧠 How Non-Academic Authors Are Detected
 The tool uses simple heuristics to detect non-academic authors:
 
 Affiliation string does not contain academic keywords like:
@@ -43,7 +42,7 @@ Affiliation does contain corporate indicators like:
 pharma, biotech, inc, ltd, corp, gmbh, etc.
 
 Email domains also help identify affiliation type
-🧱 Project Structure
+##🧱 Project Structure
 pubmed-fetcher/
 ├── pubmed_fetcher/
 │   ├── __init__.py              # Package initializer
@@ -56,7 +55,7 @@ pubmed-fetcher/
 ├── README.md                   # This file
 ├── poetry.lock                 # Poetry lock file
 ├── pyproject.toml              # Project config & script binding
-💡 Tools & Libraries Used
+##💡 Tools & Libraries Used
 Typer — CLI framework
 
 BioPython — For interacting with PubMed/Entrez API
@@ -68,13 +67,13 @@ Poetry — Dependency management and packaging
 Git — Version control
 
 OpenAI GPT — Used for development assistance and suggestions
-✨ Bonus (Optional)
+##✨ Bonus (Optional)
 To publish your package on Test PyPI:
  poetry build
  poetry publish -r test-pypi
 Configure your token if needed:
  poetry config pypi-token.test-pypi <your-token>
-👨‍💻 Author
+##👨‍💻 Author
 Nithin Harsha Nidigonda
 
 GitHub: @harsha24680
